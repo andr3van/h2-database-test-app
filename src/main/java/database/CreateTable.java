@@ -2,7 +2,7 @@ package database;
 
 import java.sql.SQLException;
 
-public class Create {
+public class CreateTable {
 
     public void createTable(String tableName) {
         // Execute a query

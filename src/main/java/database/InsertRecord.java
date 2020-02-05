@@ -3,7 +3,7 @@ package database;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class Record {
+public class InsertRecord {
 
     private PreparedStatement prep;
 

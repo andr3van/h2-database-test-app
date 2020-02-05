@@ -25,7 +25,7 @@ public class Connectivity {
     }
 
     @SuppressFBWarnings("DMI_EMPTY_DB_PASSWORD")
-    public void dbConnect() {
+    public void dbConnect() throws ClassNotFoundException {
         conn = null;
         stmt = null;
 
@@ -37,7 +37,7 @@ public class Connectivity {
             System.out.println("Connecting to database...");
             conn = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = conn.createStatement();
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
